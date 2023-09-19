@@ -58,7 +58,7 @@ def main():
     driver.save_screenshot('/home/runner/work/_temp/helpinfo.png')
     
     driver.get('https://hi.linkmovie.online')
-    time.sleep(3)
+    time.sleep(7)
     driver.save_screenshot('/home/runner/work/_temp/linkmovie.png')
     
     driver.get('https://bot.incolumitas.com/#botChallenge')
@@ -73,7 +73,7 @@ def main():
                 f.write(buffer)
     
     driver.get('https://hi.linkmovie.online')
-    time.sleep(5)
+    time.sleep(11)
     logger.info('current url %s' % driver.current_url)
     
     try:
