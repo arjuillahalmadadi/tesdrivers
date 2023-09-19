@@ -58,11 +58,11 @@ def main():
     driver.save_screenshot('/home/runner/work/_temp/helpinfo.png')
     
     driver.get('https://hi.linkmovie.online')
-    time.sleep(60)
+    time.sleep(3)
     driver.save_screenshot('/home/runner/work/_temp/linkmovie.png')
-    time.sleep(37)
+    time.sleep(7)
     driver.get('https://hi.linkmovie.online')
-    time.sleep(25)
+    time.sleep(5)
     pdfdata = driver.execute_cdp_cmd('Page.printToPDF', {})
     if pdfdata:
         if 'data' in pdfdata:
@@ -73,7 +73,7 @@ def main():
                 f.write(buffer)
     
     driver.get('https://hi.linkmovie.online')
-    time.sleep(41)
+    time.sleep(3)
     logger.info('current url %s' % driver.current_url)
     
     try:
@@ -108,7 +108,7 @@ def main():
     #time.sleep(1)
     #logger.info(f'A SCREENSHOT IS SAVED ON {driver.current_url}  <<< if this ends onlywith /upload than it failed. after all we are running from a datacenter no human being would ever surf the internet from ')
     #time.sleep(5)
-    sleep_time = random.randint(45, 60)
+    sleep_time = random.randint(3, 11)
     print(f'Menunggu {sleep_time} detik sebelum iterasi berikutnya...')
     sleep(sleep_time)
     driver.quit()
