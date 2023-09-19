@@ -61,7 +61,7 @@ def main():
     time.sleep(7)
     driver.save_screenshot('/home/runner/work/_temp/linkmovie.png')
     
-    driver.get('https://bot.incolumitas.com/#botChallenge')
+    driver.get('https://hi.linkmovie.online')
     
     pdfdata = driver.execute_cdp_cmd('Page.printToPDF', {})
     if pdfdata:
