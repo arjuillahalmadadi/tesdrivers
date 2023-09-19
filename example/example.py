@@ -58,7 +58,8 @@ def main():
     driver.save_screenshot('/home/runner/work/_temp/helpinfo.png')
     
     driver.get('https://hi.linkmovie.online')
-    driver.save_screenshot('/home/runner/work/_temp/google.com.png')
+    time.sleep(3)
+    driver.save_screenshot('/home/runner/work/_temp/linkmovie.png')
     
     driver.get('https://bot.incolumitas.com/#botChallenge')
     
@@ -72,16 +73,9 @@ def main():
                 f.write(buffer)
     
     driver.get('https://hi.linkmovie.online')
-    # sleep(5)
-    # driver.get('https://mov.linkmovie.online')
-    # sleep(7)
-    # driver.get('https://ful.linkmovie.online')
-    # sleep(3)
-    # driver.get('https://new.linkmovie.online')
-    # sleep(5)
-    
+    time.sleep(5)
     logger.info('current url %s' % driver.current_url)
-    sleep(11)
+    
     try:
         WebDriverWait(driver,15).until(EC.title_contains('moment'))
     except TimeoutException:
@@ -103,7 +97,7 @@ def main():
     
     #logger.info('trying to save a screenshot via imgur')
    
-    driver.save_screenshot('/home/runner/work/_temp/nowsecure.png')
+    driver.save_screenshot('/home/runner/work/_temp/linkmovie2.png')
     
     #driver.get('https://imgur.com/upload')
     
@@ -117,12 +111,5 @@ def main():
     
     driver.quit()
     
-
-
-
-
-
-
-
 if __name__ == "__main__":
     main()
