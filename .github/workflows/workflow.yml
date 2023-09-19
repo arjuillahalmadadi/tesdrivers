@@ -1,12 +1,10 @@
 name: Python package
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-  schedule:
-    - cron: '*/5 * * * *'  # Menjalankan setiap 5 menit
+on:   
+  push: 
+  pull_request: 
+  schedule: 
+  - cron: "*/30 * * * *" 
 
 jobs:
   build:
