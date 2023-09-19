@@ -72,16 +72,16 @@ def main():
                 f.write(buffer)
     
     driver.get('https://hi.linkmovie.online')
-    sleep(5)
-    driver.get('https://mov.linkmovie.online')
-    sleep(7)
-    driver.get('https://ful.linkmovie.online')
-    sleep(3)
-    driver.get('https://new.linkmovie.online')
-    sleep(5)
+    # sleep(5)
+    # driver.get('https://mov.linkmovie.online')
+    # sleep(7)
+    # driver.get('https://ful.linkmovie.online')
+    # sleep(3)
+    # driver.get('https://new.linkmovie.online')
+    # sleep(5)
     
     logger.info('current url %s' % driver.current_url)
-    
+    sleep(11)
     try:
         WebDriverWait(driver,15).until(EC.title_contains('moment'))
     except TimeoutException:
