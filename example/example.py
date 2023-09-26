@@ -47,7 +47,7 @@ def main():
     #3##
     
     
-    driver = uc.Chrome(headless=False, browser_executable_path=browser_executable_path)
+    driver = uc.Chrome(browser_executable_path=browser_executable_path)
     logging.getLogger().setLevel(10)
     
     driver.get('chrome://version')
