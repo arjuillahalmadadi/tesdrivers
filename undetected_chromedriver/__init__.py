@@ -117,14 +117,14 @@ class Chrome(selenium.webdriver.chrome.webdriver.WebDriver):
         # service_log_path=None,
         keep_alive=True,
         log_level=0,
-        headless=False,
+        headless=True,
         version_main=None,
         patcher_force_close=False,
         suppress_welcome=True,
         use_subprocess=True,
-        debug=False,
+        debug=True,
         no_sandbox=True,
-        user_multi_procs: bool = False,
+        user_multi_procs: bool = True,
         **kw,
     ):
         """
